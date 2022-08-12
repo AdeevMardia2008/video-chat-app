@@ -7,7 +7,6 @@
     <title>Video Chat App</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
-    <script src="https://unpkg.com/peerjs@1.4.5/dist/peerjs.min.js"></script>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -15,10 +14,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <script> const ROOMID="<%= roomId %>" </script>
-
     <!-- Socket.io -->
     <script src="/socket.io/socket.io.js"></script>
+
+    <!-- PeerJS -->
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+
+    <script>
+        const ROOM_ID = "<%= roomId %>";
+    </script>
 
 </head>
 
